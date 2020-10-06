@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Datalist Cars</h1>
+    <ul>
+        <li>La etiqueta <strong>datalist</strong> especifica una lista de opciones predefinidas para un elemento <strong>input</strong>.</li>
+        <li>La etiqueta <strong>datalist</strong> se utiliza para proporcionar una función de "autocompletar" para los elementos <strong>input</strong>. Los usuarios verán una lista desplegable de opciones predefinidas a medida que ingresan datos.</li>
+        <li>El atributo id del elemento <strong>datalist</strong> debe ser igual al atributo list del elemento <strong>input</strong> (esto los une).</p></li>
+    </ul>
+    <form method="GET">
+        <label for="car">Choose your car from the list:</label>
+        <input list="cars" name="car">
+
+        <datalist id="cars">
+        <option value="Alfa Romeo">
+        <option value="Audi">
+        <option value="Fiat">
+        <option value="Ferrari">
+        <option value="Lotus">
+        <option value="Honda">
+        <option value="Maserati">
+        <option value="Jeep">
+        </datalist>
+
+        <input type="submit">
+    </form>
+    <hr>
+    <h1>The input multiple</h1>
+    <ul>
+        <li>El atributo múltiple es un atributo booleano.</li>
+        <li>Cuando está presente, especifica que el usuario puede ingresar más de un valor en el elemento <strong>input</strong>.</li>
+    </ul>
+    <p>Consejo: Para [input type = "file"]: para seleccionar varios archivos, mantenga presionada la tecla CTRL o SHIFT mientras selecciona.</p>
+    <em>Nota: El atributo múltiple funciona con los siguientes tipos de entrada: correo electrónico y archivo.</em>
+    
+    <p>Selecciona varios ficheros para subir:</p>
+    <form>
+    <label for="files">Select files:</label>
+    <input type="file" id="files" name="files" multiple><br>
+    <input type="submit">
+    </form>
+    
+    <hr>
+
+    <h1>The autofocus attribute</h1>
+    <p>La propiedad de enfoque automático es un booleano que refleja el atributo HTML de enfoque automático, que indica si el elemento asociado obtendrá el foco de entrada cuando se cargue la página, a menos que el usuario lo anule.</p>
+    <form >
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" autofocus><br><br>
+    <label for="apellido">Apellidos:</label>
+    <input type="text" name="apellido"><br><br>
+    <input type="submit">
+    </form>
+</body>
+</html>
