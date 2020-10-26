@@ -1,0 +1,29 @@
+      
+.note {
+    background-color: AliceBlue;
+    border: 1px solid #777;
+    box-shadow: 4px 4px 2px #333;
+    margin: 10px;
+    padding: 5px;
+}
+section > p:first-of-type {
+    font-weight: bold;
+}
+p:first-letter {
+    color: red;
+}
+
+/* COUNTER */
+body {
+    counter-reset: p div;
+
+}
+
+p::before {
+    counter-increment: p;                   /* Increment the value of section counter by 1 */
+    content: "Parrafo " counter(p) ": ";    /* Display the word 'Section ', the value of                                               of each h3 */
+  }
+div::before {
+    counter-increment: div;                   /* Increment the value of section counter by 1 */
+    content:"Div " counter(div) ": ";    /* Display the word 'Section ', the value of                                               of each h3 */
+}
