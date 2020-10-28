@@ -1,0 +1,33 @@
+.p{
+    border: 5px;
+}
+.uno{
+    border-style: groove;
+}
+.dos{
+    border-style: ridge;
+}
+.tres{
+    border-style: outset;
+}
+.cuatro{
+    border-style: none;
+}
+.cinco{
+    border-style: dashed;
+}
+.seis{
+    border-style: solid;
+}
+.siete{
+    border-style: inherit;
+}
+.ocho{
+    border-style: double;
+}
+.nueve{
+    border-style: dotted;
+}
+.diez{
+    border-style: inset;
+}
