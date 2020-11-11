@@ -1,0 +1,38 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section {
+    height: 150px;
+    width: 600px;
+    background-color: lightcoral;
+    margin-bottom: 2em;
+    margin-right: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: midnightblue;
+    width: 75px;
+    height: 100px;
+    color: white;
+    border: 1px solid white;
+    margin: 1em;
+}
+p{
+    font-size: 3em;
+    text-align: center;
+}
+
+.segunda{
+justify-content: center;
+flex-direction: row-reverse;
+}
+.tercera{
+    justify-content: right;
+}
