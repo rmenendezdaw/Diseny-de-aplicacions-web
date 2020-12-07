@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>grid04</title>
+</head>
+<style>
+*{
+    margin: 0;
+}
+    .container-page{
+        display: grid;
+        width: 100%;
+        grid-template-areas: 
+    "header header header header header"
+    "aside_left main main main aside_right"
+    "footer footer footer footer footer";
+    }
+    .header{
+        height: 70px;
+        grid-area: header;
+        background-color: rgba(218, 40, 40, 0.692);
+    }
+    .aside_left{
+        height: 460px;
+        grid-area: aside_left;
+        background-color: rgb(32, 29, 179);
+    }
+    .main{
+        height: 460px;
+        grid-area: main;
+        background-color: rgba(26, 88, 21, 0.692);
+    }
+    .aside_right{
+        height: 460px;
+        grid-area: aside_right;
+        background-color: rgba(34, 174, 192, 0.692);
+    }
+    .footer{
+        height: 70px;
+        grid-area: footer;
+        background-color: rgba(255, 0, 0, 0.692);
+    }
+</style>
+<body>
+    <div class="container-page">
+        <header class="header">Header</header>
+        <aside class="aside_left">Aside left</aside>
+        <main class="main">Content</main>
+        <aside class="aside_right">Aside right</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+
+
+</body>
+
+</html>
