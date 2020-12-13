@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>grid kit</title>
+</head>
+<style>
+div{
+  width: 110px;
+  height: 60px;
+  border-radius: 10%;
+  text-align: center;
+  font-weight: bold;
+  margin: 1em;
+}
+.container_grid{
+  width: 80%;
+  margin: 40px;
+  padding: 50px;
+  display: grid;
+  grid-template-areas: 
+  "alt leds aux"
+  "oil_press leds sat"
+  "oil_temp leds acc"
+  "egt main_buttons radar"
+  "fuel main_buttons mp1";
+  align-items: center;
+  justify-items: center;
+  background-color: black;
+}
+.panel_yellow{
+  background-color: yellow;
+}
+.panel_red{
+  background-color: red;
+} 
+.alt{
+  grid-area: alt;
+}
+.oil_press{
+  grid-area: oil_press;
+}
+.aux{
+  grid-area: aux;
+}
+.sat{
+  grid-area: sat;
+}
+.oil_temp{
+  grid-area: oil_temp;
+}
+.egt{
+  grid-area: egt;
+}
+.fuel{
+  grid-area: fuel;
+}
+.acc{
+  grid-area: acc;
+}
+.radar{
+  grid-area: radar;
+}
+.mp1{
+  grid-area: mp1;
+}
+.bar_leds{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    grid-area:leds;
+}
+.led_bar{
+    display: grid;
+    grid-template-rows: repeat(18,5px);
+    grid-row-gap: 15px;
+}
+.led_bar_item{
+    padding: 5px 54px;
+    background-color: rgba(124, 7, 7, 0.747);
+}
+.main_buttons_function{
+    background-color: yellow;
+    grid-area: main_buttons_function;
+    padding: 15px;
+    margin: 0px 50px;
+    
+}
+.main_buttons_panel{
+  padding: 30px 15px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    text-align: center;
+}
+.main_buttons{
+    display: grid;
+    grid-template-areas: 
+    "main_buttons_function   main_buttons_panel_normal"
+    "main_buttons_function   main_buttons_panel_auto"
+    "main_buttons_function   main_buttons_panel_pursuit";
+    grid-area: main_buttons;
+    grid-column-gap: 50px;
+    margin-top: 50px;
+}
+.normal{
+    background-color: rgba(1, 105, 1, 0.486);
+    grid-area: main_buttons_panel_normal;
+}
+.auto{
+    background-color: rgba(138, 138, 6, 0.452);
+    grid-area: main_buttons_panel_auto;
+}
+.pursuit{
+    background-color: rgba(250, 9, 9, 0.295);
+    grid-area: main_buttons_panel_pursuit;
+}
+</style>
+<body>
+  <main class="container_grid">
+    <div class="panel_yellow alt"><p>ALT</p></div>
+    <div class="panel_yellow oil_press"><p>OIL PRESS</p></div>
+    <div class="panel_yellow aux"><p>AUX</p></div>
+    <div class="panel_yellow sat"><p>SAT COMM</p></div>
+    <div class="panel_red oil_temp"><p>OIL TEMP</p></div>
+    <div class="panel_red egt"><p>EGT</p></div>
+    <div class="panel_red fuel"><p>FUEL</p></div>
+    <div class="panel_red acc"><p>ACC</p></div>
+    <div class="panel_red radar"><p>RADAR</p></div>
+    <div class="panel_red mp1"><p>MP1</p></div>
+
+    <section class="bar_leds">
+            <section class="led_bar">
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+            </section>
+            <section class="led_bar">
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+            </section>
+            <section class="led_bar">
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+                <section class="led_bar_item"></section>
+            </section>
+        </section>
+        <aside class="main_buttons">
+            <aside class="main_buttons_function"></aside>
+            <aside class="main_buttons_function"></aside>
+            <aside class="main_buttons_function"></aside>
+            <aside class="main_buttons_panel normal">NORMAL CRUISE</aside>
+            <aside class="main_buttons_panel auto">AUTO CRUISE</aside>
+            <aside class="main_buttons_panel pursuit">PURSUIT</aside>
+        </aside>
+  </main>
+</body>
+
+</html>
