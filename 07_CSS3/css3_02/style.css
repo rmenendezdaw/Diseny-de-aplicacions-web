@@ -1,0 +1,49 @@
+:root{
+    --icon: url('images/icon.png');
+    --icon-zip: url('images/zip.png');
+    --icon-pdf: url('images/pdf.png');
+}
+a{
+    text-decoration: none;
+}
+.card {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left; 
+    width: 600px;
+    height: 200px;
+    padding-left: 100px;
+}
+.card a[href="mailto"]::before{
+    content: "";
+    display: inline-block;
+    background-image: var(--icon);
+    background-size: 100%;
+    margin-right: 5px;
+    width: 15px; 
+    height: 15px;
+}
+
+.info_card {
+    margin-top: 1em;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left; 
+    width: 350px;
+    height: 200px;
+    padding-left: 75px;
+}
+.info_card a[href="#"]::before{
+    content: "";
+    display: inline-block;
+    background-image: var(--icon-pdf);
+    background-size: 100%;
+    width: 15px; 
+    height: 15px;
+    margin-right: 5px;
+}
+.info_card .zip[href="#"]::before{
+    background-image: var(--icon-zip);
+}
