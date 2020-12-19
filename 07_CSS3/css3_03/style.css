@@ -1,0 +1,31 @@
+:root{
+
+}
+a {
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+
+}
+.card{
+    margin: 1em;
+    display: flex;
+    border: 1px solid black;
+    width: 300px;
+    height: 500px;
+    align-items: center;
+    flex-direction: column;
+}
+.card-menu ul{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 3px;
+    padding-right: 3px;
+    list-style: none;
+}
+
+.card-content h2:target{
+    background-color: yellow;
+}
