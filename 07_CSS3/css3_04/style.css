@@ -1,0 +1,19 @@
+:root{
+    --underlined: yellow;
+}
+a {
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+}
+.A ul li:nth-child(2){
+    background-color: var(--underlined);
+}
+.B ul li:nth-child(2n+1){
+    background-color: var(--underlined);
+}
+.C ul li:nth-child(3n){
+    background-color: var(--underlined);
+}
