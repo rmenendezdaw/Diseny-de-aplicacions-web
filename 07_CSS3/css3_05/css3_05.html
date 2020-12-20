@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS3_05</title>
+  <style media="screen">
+  :root{
+    --border-gray: #7f7f7f;
+    --border-yellow: #ffaa00;
+
+  }
+  .divContainer {
+    width:500px;
+    border:5px solid var(--border-gray);
+  }
+  .divBox {
+    width:250px;
+    border:5px solid var(--border-yellow);
+    box-sizing: border-box;
+    padding:20px;
+    float:left;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="divContainer">
+    <div class="divBox">Div is positioned on the left.</div>
+    <div class="divBox">Div is positioned on the right.</div>
+  <div style="clear:both;"></div>
+  </div>
+</body>
+</html>
