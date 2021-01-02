@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animations :: DIW CSS3_12</title>
+  <style media="screen">
+
+    @keyframes anim1 {
+      0% { background-color: blue;
+           left: 0px;
+           width: 20px;
+          }
+      25% { background-color: green;
+            left: 25px;
+            width: 40px;
+          }      
+      50% { background-color: orange;
+            left: 50px;
+            width: 60px;
+
+          }
+      75% { background-color: red;
+            left: 25px;
+            width: 80px;
+
+          }          
+      100% { width: 100px;
+             background-color:  yellow; 
+             left: 0px; 
+            } 
+    }
+    @keyframes anim2 {
+      from {font-size: 0%;}
+      to {font-size: 100%;
+          color: pink;
+          background-color: red;}
+    }
+  .anima1 {
+    box-shadow: 10px 10px 10px rgb(167, 167, 167);
+    position: relative;
+    width: 10px;
+    height: 10px;
+    font-size: 0%;
+    font-weight: bold;
+    animation: anim1 4s infinite;
+    animation-direction: alternate;
+    }
+  .anima2{
+    position: relative;
+    border-radius: 15%;
+    padding:2px;
+    color: white;
+    font-weight: bold;
+    animation: anim2 2s infinite;
+    animation-direction: alternate-reverse;
+
+    }
+  </style>
+</head>
+  <body>
+  <h1>Animation1</h1>
+  <section class="anima1"></section>
+  <h1>Animation2</h1>
+  <span class="anima2">Raúl</span>
+</body>
+</html>
