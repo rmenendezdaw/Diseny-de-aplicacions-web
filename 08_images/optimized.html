@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Opimized HTML</title>
+  <style>
+      :root{
+          --myimg: 1em groove rgb(101, 101, 116);
+      }
+      html{
+          background-color: rgb(87, 82, 82);
+      }
+      section{
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: center;
+      }
+      img{
+          width: 300px;
+          height: 400px;
+          margin: 5px;
+          border: var(--myimg)
+      }
+  </style>
+</head>
+
+<body>
+    <h2>My gallery</h2>
+    <section>
+      <img src="./images/si-1.webp" alt="imagen no optimizada de una niña japonesa">
+      <img src="./images/si-2.webp" alt="imagen no optimizada de un atardecer">
+      <img src="./images/si-3.webp" alt="imagen no optimizada de una lagartija">
+      <img src="./images/si-4.webp" alt="imagen no optimizada de un hombre haciendo deporte">
+    </section>
+</body>
+</html>
