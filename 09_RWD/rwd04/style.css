@@ -58,7 +58,6 @@ body {
 main{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
 }
 aside{
   padding: 10px;
