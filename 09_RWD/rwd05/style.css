@@ -1,0 +1,91 @@
+
+body{
+    background-color: rgba(216, 97, 0);
+}
+.container{
+    display: grid;
+    grid-template-areas:
+    "header header header header header"
+    "nav main main main aside"
+    "footer footer footer footer footer"
+    ;
+}
+img{
+    width: 100px;
+    height: 120px;
+}
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: rgb(34, 214, 255);
+    grid-area: header;
+}
+nav{
+    background-color: rgb(106, 255, 198);
+    grid-area: nav;
+    width: 200px;
+    margin: 5px 0 0 10px;
+}
+nav a{
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+main{
+    margin-bottom: 200px;
+    grid-area: main;
+}
+aside{
+    background-color: rgb(99, 151, 151);
+    grid-area: aside;
+    width: 200px;
+    margin: 5px 10px 0 0;
+
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(36, 90, 85);
+    grid-area: footer;
+}
+@media screen and (max-width: 760px) {
+    body{
+        background-color: white;
+    }
+    nav a{
+        text-decoration: none;
+        width: auto;
+        height: auto;
+    }
+    nav a:hover{
+        background-color: yellow;
+    }
+    img{
+        display: none;
+    }
+    nav{
+        margin: 5px 0 0 0;
+        width: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    aside{
+        margin: 0 0 5px 0;
+        width: auto; 
+    }
+    footer{
+        width: auto;
+    }
+    .container{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer"
+        ;
+    }
+}
