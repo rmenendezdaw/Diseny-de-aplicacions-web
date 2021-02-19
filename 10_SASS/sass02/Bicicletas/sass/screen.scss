@@ -1,0 +1,42 @@
+$color-text: #eee;
+$color-text-hover: #fff;
+$color-back: #666;
+$color-hover-list: #888;
+
+
+@mixin setColorText{
+    background-color: $color-back;
+    color: $color-text;
+}
+@mixin setColorHover{
+    background-color: $color-hover-list;
+    color: $color-text-hover;
+}
+
+@mixin boxSizing($type){
+    -webkit-box-sizing: $type;
+    -moz-box-sizing: $type;
+    box-sizing: $type;
+}
+
+@mixin Transition($property, $duration, $timing: linear){
+    -moz-transition: $property $duration $timing;
+    -webkit-transition: $property $duration $timing;
+    transition: $property $duration $timing;
+}
+@keyframes iluminar {
+    from {
+      background-color: #666;
+      color: #eee;
+    }
+    to {
+      background-color: #888;
+      color: #fff;
+    }
+  }
+  @mixin Animation($name, $duration, $timing: linear){
+    -moz-animation: $name $duration $timing;
+    -webkit-animation: $name $duration $timing;
+    animation: $name $duration $timing;
+}
+@import "menu"
