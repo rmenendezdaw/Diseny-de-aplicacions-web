@@ -1,0 +1,73 @@
+$images: (
+    (icon-menu, "../images/menu.png", 0px, 0px, 30px,31px),
+    (icon-news, "../images/news.png", 0px, -90px, 30px,40px),
+    (icon-money, "../images/money.png", 0px, -100px, 50px,54px),
+    (icon-contact, "../images/contact.png", 0px, 0px, 30px,31px),
+
+);
+%button-block{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+%input-block{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #bbb;
+}
+#contenido{
+    padding: 30px 20px;
+    @include responsive("medium") {
+        padding: 10px 20px;
+    }
+    .col-left{
+        @include boxSizing(border-box);
+        width: 30%;
+        float: left;
+        padding: 10px;
+        .login{
+            input { @extend %input-block;}
+            button {
+              @extend %button-block;
+              @if $theme == 'light' {
+                background-color: darken($color-back, 10%);
+                color: #eee;
+              } @else {
+                background-color: lighten($color-back, 20%);
+                color: #eee;
+              }
+            }
+        }
+        @include responsive("medium") {
+        float: none;
+        width: 100%;
+        }
+    }
+    .col-right {
+        @include boxSizing(border-box);
+        margin-left: 30%;
+        width: 70%;
+        padding: 10px;
+        h1 {
+          color: $color-text;
+          font-size: 1.6em;
+        }
+        @include responsive("small") {
+          margin-left: 0;
+          width: 100%;
+        }
+        .button-action {
+          background-color: $color-back;
+          color: white;
+          &:hover {
+            background-color: lighten($color-back, 20%);
+          }
+        }
+    }
+    
+}
