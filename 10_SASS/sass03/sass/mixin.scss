@@ -1,0 +1,36 @@
+@mixin setColorText{
+    background-color: $color-back;
+    color: $color-text;
+}
+@mixin setColorHover{
+    background-color: $color-hover-list;
+    color: $color-text-hover;
+}
+
+@mixin boxSizing($type){
+    -webkit-box-sizing: $type;
+    -moz-box-sizing: $type;
+    box-sizing: $type;
+}
+
+@mixin Transition($property, $duration, $timing: linear){
+    -moz-transition: $property $duration $timing;
+    -webkit-transition: $property $duration $timing;
+    transition: $property $duration $timing;
+}
+@mixin Animation($name, $duration, $timing: linear){
+    -moz-animation: $name $duration $timing;
+    -webkit-animation: $name $duration $timing;
+    animation: $name $duration $timing;
+}
+@mixin responsive($size){
+    @if $size == 'medium' { 
+        @media (max-width : 1024px){
+            @content;
+        }
+    } @else if $size == 'small' { 
+        @media (max-width: 800px) {
+            @content;
+        }
+    }
+}

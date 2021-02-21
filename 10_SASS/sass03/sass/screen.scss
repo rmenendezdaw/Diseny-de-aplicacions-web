@@ -1,0 +1,38 @@
+$color-text: #eee;
+$color-text-hover: lighten($color-text, 10%);
+$color-back: #15a;
+$color-hover-list: lighten($color-back, 10%);
+$color-title: darken($color-back, 10%);
+
+@keyframes iluminar {
+    from {
+      background-color: #666;
+      color: #eee;
+    }
+    to {
+      background-color: #888;
+      color: #fff;
+    }
+  }
+body {
+  padding: 0px;
+  margin: 0px;
+}
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px;
+}
+header {
+    padding: 12px 30px;
+    font-size: 1.8em;
+    color: #444;
+    background-color: #eee;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  @import "mixin";
+  @import "contenido";
+  @import "_menu";
